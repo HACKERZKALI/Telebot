@@ -1,6 +1,6 @@
-"""Update UserBot code (for Xtra-Telegram)
+"""Update UserBot code (for TELEBOT)
 Syntax: .update
-\nAll Credits goes to © @Three_Cube_TeKnoways
+\nAll Credits goes to © @TODAYSHACKER
 \nFor this awasome plugin.\nPorted from PpaperPlane Extended"""
 
 from os import remove
