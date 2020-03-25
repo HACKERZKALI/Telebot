@@ -10,14 +10,14 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba, check pinned message in** @TeleBotHelp"
-USER_BOT_WARN_ZERO = "`You were spamming my master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` **Now GTFO, i'm playing minecraft** "
-USER_BOT_NO_WARN = ("[...........███ ]▄▄▄▄▄▃ \n..▂▄▅█████▅▄▃▂\n[███████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤](tg://user?id=719195224)\n\n"
-                    "`Hello, this is TeleBot Security Service. This is an automated message in `"
-                    f"{DEFAULTUSER}'s` inbox.\n\n"
-                    "Do not spam here, else you will be blocked automatically.`\n\n"
-                    "** Send** `/start` ** to access the available options.**")
-
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba, check pinned message in** @XtraTgBot"
+USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` **Now GTFO, i'm playing minecraft** "
+USER_BOT_NO_WARN = ("[[ BODYGARD OF TODAYSHACKER ]](tg://user?id=1116223246)\n\n"
+                    "`Hello, I will answer to your message soon .`\n\n"
+                    "`Please wait for my response and Please **DON'T SPAM** with me.`\n\n"
+                    "`TAG ME IN @EONARMYDISCUSSION FOR GET FAST RESPONSE`\n\n"
+                    "`JOIN MY SIR CHANNEL @EONARMY FOR GET PREMIUM ACCOUNT DAILY IN FREE`\n\n"
+                    "**Send** `/start` ** so that we can decide why you're here.**")
 
 if Var.PRIVATE_GROUP_ID is not None:
     @command(pattern="^.approve ?(.*)")
@@ -67,7 +67,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.is_private:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nGet lost, Now You Can't Message Me..[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nI Fuck Your Mom , Now You Can't Message Me Again...[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
